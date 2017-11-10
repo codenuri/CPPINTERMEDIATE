@@ -14,7 +14,7 @@ struct Point
 {
 	int x, y;
 	Point(int a = 0, int b = 0) { std::cout << "Point()"  << std::endl; }
-	~Point()					{ std::cout << "~Point()" << std::endl; }
+	~Point()		    { std::cout << "~Point()" << std::endl; }
 };
 
 int main()
