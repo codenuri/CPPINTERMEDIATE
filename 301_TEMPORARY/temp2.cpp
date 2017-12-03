@@ -2,6 +2,13 @@
 * HOME       : ecourse.co.kr
 * EMAIL      : smkang @ codenuri.co.kr
 * COURSENAME : C++ Intermediate
+* Copyright (C) 2018 CODENURI Inc. All rights reserved.
+*/
+
+/*
+* HOME       : ecourse.co.kr
+* EMAIL      : smkang @ codenuri.co.kr
+* COURSENAME : C++ Intermediate
 * MODULE     : temp2.cpp
 * Copyright (C) 2017 CODENURI Inc. All rights reserved.
 */
@@ -14,7 +21,7 @@ struct Point
 {
 	int x, y;
 	Point(int a = 0, int b = 0) { std::cout << "Point()"  << std::endl; }
-	~Point()		    { std::cout << "~Point()" << std::endl; }
+	~Point()					{ std::cout << "~Point()" << std::endl; }
 };
 
 int main()
