@@ -5,14 +5,15 @@
 * Copyright (C) 2018 CODENURI Inc. All rights reserved.
 */
 
+// ì•„ë˜ ì†ŒìŠ¤ì— ëŒ€í•œ ì„¤ëª…ì€ https://youtu.be/ncV44oB2GSA  ì—ì„œ ë³´ì‹¤ìˆ˜ ìˆìŠµë‹ˆë‹¤.
 class istream
 {
 public:
 	bool fail() { return false; }
 
-	// C++11 º¯È¯ ¿¬»êÀÚ ¾Õ¿¡µµ explicit¸¦ ºÙÀÏ¼ö ÀÖ´Ù.
-	// ¾Ï½ÃÀû º¯È¯Àº error. ¸í½ÃÀû Çã¿ë
-	// ´Ü, if ¹®¾È¿¡¼­´Â ¾Ï½ÃÀûÀ¸·Î bool·Î º¯È¯ Çã¿ë.
+	// C++11 ë³€í™˜ ì—°ì‚°ì ì•ì—ë„ explicitë¥¼ ë¶™ì¼ìˆ˜ ìˆë‹¤.
+	// ì•”ì‹œì  ë³€í™˜ì€ error. ëª…ì‹œì  í—ˆìš©
+	// if ë¬¸ì•ˆì— ê°ì²´ë¥¼ ë„£ì„ìˆ˜ë„ ìˆë‹¤.
 	explicit operator bool() { return fail() ? false : true; }
 };
 istream cin;
@@ -26,5 +27,6 @@ int main()
 
 	//cin << n; // error
 
-	if ( cin ) {}
+	if ( cin ) {}  // ok
+	if ( cin == false ) {}// error
 }
